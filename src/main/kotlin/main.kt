@@ -2,6 +2,21 @@ import kotlin.random.Random
 
 fun main() {
 
+
+    val employeeOne = Employee("Dawid", "Kolodziej")
+    employeeOne.addLogin("Monday login")
+
+    val employeeTwo = Employee("Szymon", "Szczupacki")
+    employeeTwo.addLogin("Tuesday login")
+
+    val messageLogs = CompanyLogs.getInstance()
+    messageLogs.printAll()
+
+
+    println("*********************************************************")
+    println("****************  Report  *******************************")
+    println("*********************************************************")
+
     val ballFactory = BallFactory.getInstance()
 
 
@@ -42,4 +57,7 @@ fun main() {
     }
 
     saws.forEach {println(it?.info_saw())}
+
+    println("******************  END OF REPORT  **********************")
+    
 }
