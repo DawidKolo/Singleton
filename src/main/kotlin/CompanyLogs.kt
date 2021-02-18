@@ -9,6 +9,7 @@ class CompanyLogs private constructor(){
                 INSTANCE = CompanyLogs()
 
             return INSTANCE!!
+
         }
     }
 

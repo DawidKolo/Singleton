@@ -4,10 +4,10 @@ fun main() {
 
 
     val employeeOne = Employee("Dawid", "Kolodziej")
-    employeeOne.addLogin("Monday login")
+    employeeOne.addLogin("Last login")
 
     val employeeTwo = Employee("Szymon", "Szczupacki")
-    employeeTwo.addLogin("Tuesday login")
+    employeeTwo.addLogin("Last login")
 
     val messageLogs = CompanyLogs.getInstance()
     messageLogs.printAll()
@@ -59,5 +59,5 @@ fun main() {
     saws.forEach {println(it?.info_saw())}
 
     println("******************  END OF REPORT  **********************")
-    
+
 }

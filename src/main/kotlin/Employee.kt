@@ -9,13 +9,6 @@ class Employee (val name: String, val surname: String) {
 
     }
 
-    fun printMessages() {
-        val companyLogs = CompanyLogs.getInstance()
-        companyLogs.printAll()
-    }
-
-
-
     override fun toString(): String {
         return "Employee('$name', '$surname')"
     }
