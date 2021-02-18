@@ -10,7 +10,7 @@ fun main() {
 
     for (i in 1..3) {
         val ball = ballFactory.createBall("big")
-        ball?.maxRadius = Random.nextInt(250,260)
+        ball?.maxRadius = Random.nextInt(180,400)
         balls.add(ball)
     }
 
