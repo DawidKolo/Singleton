@@ -9,6 +9,9 @@ fun main() {
     val employeeTwo = Employee("Szymon", "Szczupacki")
     employeeTwo.addLogin("Last login")
 
+    val employeeThree = Employee("Franciszek", "Nowak")
+    employeeThree.addLogin("First login")
+
     val messageLogs = CompanyLogs.getInstance()
     messageLogs.printAll()
 
